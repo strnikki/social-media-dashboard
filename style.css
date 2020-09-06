@@ -1,0 +1,90 @@
+@charset "UTF-8";
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+	font-family: 'Inter', sans-serif;
+    background-color: hsl(230, 17%, 14%);
+    color: hsl(0, 0%, 100%);
+}
+
+.wrapper {
+    width: 97%;
+    max-width: 1440px;
+    float: none;
+    margin: 0 auto;
+}
+
+.main-header {
+    margin-bottom: 5px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.followers {
+    margin-top: 5px;
+    font-size: 15px;
+    color: hsl(228, 34%, 66%);
+}
+
+.theme-switch {
+    margin-top: 30px;
+}
+
+.main-container {
+    display: grid;
+    column-gap: 3%;
+    margin: 5% 0;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.status-container {
+    border: 1px solid hsl(228, 28%, 20%);
+    border-radius: 8px;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(228, 28%, 20%);
+}
+
+.status-container.facebook {
+    border-top: thick solid hsl(208, 92%, 53%);
+}
+
+.status-container.twitter {
+    border-top: thick solid hsl(203, 89%, 53%);
+}
+
+.status-container.instagram {
+    border-top: thick solid; /*todo gradient*/
+}
+
+.status-container.youtube {
+    border-top: thick solid hsl(348, 97%, 39%);
+}
+
+
+.username {
+    color: hsl(228, 34%, 66%);
+}
+
+.number-followers {
+    font-size: 60px;
+    font-weight: 700;
+    margin: 10px auto;
+}
+
+.count-type {
+    margin-top: 5px;
+    color: hsl(228, 34%, 66%);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
