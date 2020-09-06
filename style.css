@@ -88,3 +88,22 @@ body {
     letter-spacing: 5px;
     text-transform: uppercase;
 }
+
+.sub-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 3%;
+    row-gap: 3%;
+}
+
+.mini-status {
+    border: 1px solid hsl(228, 28%, 20%);
+    border-radius: 8px;
+    height: auto;
+    background-color: hsl(228, 28%, 20%);
+}
+
+.attribution {
+    margin-top: 5%;
+}
