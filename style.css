@@ -11,20 +11,24 @@ body {
     color: hsl(0, 0%, 100%);
 }
 
-p {
+p, h1, h2, h3 {
     padding: 0;
     margin: 0;
 }
 
 .wrapper {
     width: 97%;
-    max-width: 1440px;
+    max-width: 1200px;
     float: none;
     margin: 0 auto;
 }
 
+.header-container {
+    padding-top: 3%;
+}
+
 .main-header {
-    margin-bottom: 5px;
+    font-size: 27px;
 }
 
 .header-container {
@@ -32,14 +36,15 @@ p {
     justify-content: space-between;
 }
 
-.followers {
-    margin-top: 5px;
+.total-followers {
     font-size: 15px;
     color: hsl(228, 34%, 66%);
 }
 
 .theme-switch {
     margin-top: 30px;
+    font-weight: 700;
+    font-size: 14px;
 }
 
 .main-container {
@@ -61,6 +66,11 @@ p {
     background-color: hsl(228, 28%, 20%);
 }
 
+.status-container:hover {
+    background-color: hsl(228, 28%, 30%);
+    cursor: pointer;
+}
+
 .status-container.facebook {
     border-top: thick solid hsl(208, 92%, 53%);
 }
@@ -80,47 +90,74 @@ p {
 
 .username {
     color: hsl(228, 34%, 66%);
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 10%;
+    font-size: 12px;
+}
+
+.username > span{
+    padding-left: 5%;
 }
 
 .number-followers {
-    font-size: 60px;
+    font-size: 55px;
     font-weight: 700;
-    margin: 10px auto;
 }
 
 .count-type {
-    margin-top: 5px;
     color: hsl(228, 34%, 66%);
-    letter-spacing: 5px;
+    letter-spacing: 6px;
+    font-size: 12px;
     text-transform: uppercase;
     font-weight: 400;
 }
 
+.statistics {
+    padding-top: 10%;
+    padding-bottom: 6%;
+    font-size: 12px;
+}
+
+.sub-header {
+    font-size: 24px;
+}
+
 .sub-container {
+    padding-top: 2%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     column-gap: 3%;
-    row-gap: 15%;
+    row-gap: 10%;
 }
 
 .mini-status {
     border: 1px solid hsl(228, 28%, 20%);
     border-radius: 8px;
     padding: 8%;
+    padding-bottom: 6%;
     background-color: hsl(228, 28%, 20%);
     display:flex;
     flex-direction: column;
+}
+
+.mini-status:hover {
+    background-color: hsl(228, 28%, 30%);
+    cursor: pointer;
 }
 
 .top-half {
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding-top: 2%;
     justify-content: space-between;
     color: hsl(228, 34%, 66%);
     font-weight: 700;
-    font-size: 17px;
+    font-size: 14px;
 }
 
 .lower-half {
@@ -130,24 +167,24 @@ p {
     align-items: flex-end;
     justify-content: space-between;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 32px;
 }
 
 .percentage {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 700;
     padding-bottom: 10px;
 }
 
 .attribution {
-    margin-top: 5%;
+    margin-top: 10%;
 }
 
-.percentage.up:before {
+.up:before {
     content: "▴";
 }
 
-.percentage.down:before {
+.down:before {
     content: "▾";
 }
 
