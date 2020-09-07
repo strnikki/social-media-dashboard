@@ -1,14 +1,32 @@
 @charset "UTF-8";
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 *, *:before, *:after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
+
+:root {
+    --font-color-primary: hsl(230, 17%, 14%);
+    --font-color-secondary: hsl(228, 12%, 44%);
+    --bg-color: hsl(0, 0%, 100%);
+    --card-color: hsl(227, 47%, 96%);
+    --card-color-rover: hsl(227, 47%, 70%);
+}
+
+[data-theme="dark"] {
+    --font-color-primary: hsl(0, 0%, 100%);
+    --font-color-secondary: hsl(228, 34%, 66%);
+    --bg-color: hsl(230, 17%, 14%);
+    --card-color: hsl(228, 28%, 20%);
+    --card-color-rover: hsl(228, 28%, 30%);
+}
+
+
 body {
 	font-family: 'Inter', sans-serif;
-    background-color: hsl(230, 17%, 14%);
-    color: hsl(0, 0%, 100%);
+    background-color: var(--bg-color);
+    color: var(--font-color-primary);
 }
 
 p, h1, h2, h3 {
@@ -38,7 +56,7 @@ p, h1, h2, h3 {
 
 .total-followers {
     font-size: 15px;
-    color: hsl(228, 34%, 66%);
+    color: var(--font-color-secondary);
 }
 
 .theme-switch {
@@ -55,7 +73,7 @@ p, h1, h2, h3 {
 }
 
 .status-container {
-    border: 1px solid hsl(228, 28%, 20%);
+    border: 1px solid var(--card-color);
     border-radius: 8px;
     height: auto;
     padding: 10px;
@@ -63,11 +81,11 @@ p, h1, h2, h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: hsl(228, 28%, 20%);
+    background-color: var(--card-color);
 }
 
 .status-container:hover {
-    background-color: hsl(228, 28%, 30%);
+    background-color: var(--card-color-rover);
     cursor: pointer;
 }
 
@@ -89,7 +107,7 @@ p, h1, h2, h3 {
 
 
 .username {
-    color: hsl(228, 34%, 66%);
+    color: var(--font-color-secondary);
     display: flex;
     width: 100%;
     align-items: center;
@@ -108,7 +126,7 @@ p, h1, h2, h3 {
 }
 
 .count-type {
-    color: hsl(228, 34%, 66%);
+    color: var(--font-color-secondary);
     letter-spacing: 6px;
     font-size: 12px;
     text-transform: uppercase;
@@ -135,17 +153,17 @@ p, h1, h2, h3 {
 }
 
 .mini-status {
-    border: 1px solid hsl(228, 28%, 20%);
+    border: 1px solid var(--card-color);
     border-radius: 8px;
     padding: 8%;
     padding-bottom: 6%;
-    background-color: hsl(228, 28%, 20%);
+    background-color: var(--card-color);
     display:flex;
     flex-direction: column;
 }
 
 .mini-status:hover {
-    background-color: hsl(228, 28%, 30%);
+    background-color: var(--card-color-rover);
     cursor: pointer;
 }
 
@@ -155,7 +173,7 @@ p, h1, h2, h3 {
     align-items: center;
     padding-top: 2%;
     justify-content: space-between;
-    color: hsl(228, 34%, 66%);
+    color: var(--font-color-secondary);
     font-weight: 700;
     font-size: 14px;
 }
