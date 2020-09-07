@@ -11,6 +11,11 @@ body {
     color: hsl(0, 0%, 100%);
 }
 
+p {
+    padding: 0;
+    margin: 0;
+}
+
 .wrapper {
     width: 97%;
     max-width: 1440px;
@@ -49,6 +54,7 @@ body {
     border-radius: 8px;
     height: auto;
     padding: 10px;
+    font-weight: 700;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -87,6 +93,7 @@ body {
     color: hsl(228, 34%, 66%);
     letter-spacing: 5px;
     text-transform: uppercase;
+    font-weight: 400;
 }
 
 .sub-container {
@@ -100,8 +107,7 @@ body {
 .mini-status {
     border: 1px solid hsl(228, 28%, 20%);
     border-radius: 8px;
-    padding: 10%;
-    height: auto;
+    padding: 8%;
     background-color: hsl(228, 28%, 20%);
     display:flex;
     flex-direction: column;
@@ -119,18 +125,36 @@ body {
 
 .lower-half {
     display: flex;
+    padding-top: 10%;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
     font-weight: 700;
     font-size: 40px;
 }
 
 .percentage {
-    font-size: 15px;
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 700;
+    padding-bottom: 10px;
 }
 
 .attribution {
     margin-top: 5%;
+}
+
+.percentage.up:before {
+    content: "▴";
+}
+
+.percentage.down:before {
+    content: "▾";
+}
+
+.up {
+    color: hsl(163, 72%, 41%);
+}
+
+.down {
+    color: hsl(356, 69%, 56%);
 }
