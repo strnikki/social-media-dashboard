@@ -6,15 +6,10 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Nicole Fanelli</title>
+
   <link rel="stylesheet" href="./style.css" />
-
-  <title>Frontend Mentor | [Challenge Name Here]</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <div class="wrapper">
@@ -24,7 +19,14 @@
         <h3 class="total-followers">Total Followers: 23,004</h3>
       </div>
 
-      <div class="theme-switch">Dark Mode</div>
+      <div class="theme-switch-wrapper">
+        <span class="switch-text">Dark Mode</span>
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+      </label>
+    </div>
+    
     </div>
 
     
@@ -166,5 +168,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Nicole Fanelli</a>.
   </div>
+  <script src="./script.js"></script>
 </body>
 </html>
