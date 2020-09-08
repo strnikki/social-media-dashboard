@@ -2,6 +2,8 @@
 
 Implementation of the [Frontend Mentor - Social media dashboard with theme switcher](https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H) coding challange.
 
+[Check out the live version!](https://social-media-dashboard-six-flax.vercel.app/)
+
 Desktop - Dark theme:
 
 ![Desktop-dark](./assets/images/desktop-dark.png)
