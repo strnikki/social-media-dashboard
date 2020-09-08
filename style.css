@@ -137,36 +137,45 @@ input:checked + .slider:before {
 }
 
 .status-container {
-    border: 1px solid var(--card-color);
-    border-radius: 8px;
+    border-radius: 6px;
     height: auto;
-    padding: 10px;
     font-weight: 700;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: var(--card-color);
 }
 
-.status-container:hover {
-    background-color: var(--card-color-rover);
-    cursor: pointer;
-}
-
 .status-container.facebook {
-    border-top: thick solid hsl(208, 92%, 53%);
+    border-top: 5px solid hsl(208, 92%, 53%);
 }
 
 .status-container.twitter {
-    border-top: thick solid hsl(203, 89%, 53%);
+    border-top: 5px solid hsl(203, 89%, 53%);
+    padding-top: 12px;
 }
 
-.status-container.instagram {
-    border-top: thick solid; /*todo gradient*/
+.gradient-wrap {
+    position: relative;
+    padding-top: 5px;
+    background: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    border-radius: 5px;
+    height: 10px;
+}
+
+.status-container.instagram{
+    background: var(--card-color);
+    border-radius: 2px 2px 6px 6px;
 }
 
 .status-container.youtube {
-    border-top: thick solid hsl(348, 97%, 39%);
+    border-top:5px solid hsl(348, 97%, 39%);
+}
+
+.status-container:hover {
+    background-color: var(--card-color-rover);
+    cursor: pointer;
 }
 
 
